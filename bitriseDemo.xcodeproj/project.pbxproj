@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732D7A5528C5CD6E003CB763 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 732D7A5428C5CD6E003CB763 /* FirebaseAnalyticsSwift */; };
+		732D7A5728C5CD6E003CB763 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 732D7A5628C5CD6E003CB763 /* FirebaseAppDistribution-Beta */; };
 		73EFD36E28BF2B00007C8AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EFD36D28BF2B00007C8AB2 /* AppDelegate.swift */; };
 		73EFD37028BF2B00007C8AB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EFD36F28BF2B00007C8AB2 /* SceneDelegate.swift */; };
 		73EFD37228BF2B00007C8AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EFD37128BF2B00007C8AB2 /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732D7A5528C5CD6E003CB763 /* FirebaseAnalyticsSwift in Frameworks */,
+				732D7A5728C5CD6E003CB763 /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = bitriseDemo;
+			packageProductDependencies = (
+				732D7A5428C5CD6E003CB763 /* FirebaseAnalyticsSwift */,
+				732D7A5628C5CD6E003CB763 /* FirebaseAppDistribution-Beta */,
+			);
 			productName = bitriseDemo;
 			productReference = 73EFD36A28BF2B00007C8AB2 /* bitriseDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 73EFD36128BF2B00007C8AB2;
+			packageReferences = (
+				732D7A5328C5CD6E003CB763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 73EFD36B28BF2B00007C8AB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,7 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3M6SKH6XH5;
+				DEVELOPMENT_TEAM = UEQDGN7Z8Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bitriseDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -452,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bal.bitriseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beeapplab.bitriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3M6SKH6XH5;
+				DEVELOPMENT_TEAM = UEQDGN7Z8Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bitriseDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bal.bitriseDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beeapplab.bitriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -604,6 +615,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		732D7A5328C5CD6E003CB763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		732D7A5428C5CD6E003CB763 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 732D7A5328C5CD6E003CB763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		732D7A5628C5CD6E003CB763 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 732D7A5328C5CD6E003CB763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73EFD36228BF2B00007C8AB2 /* Project object */;
 }

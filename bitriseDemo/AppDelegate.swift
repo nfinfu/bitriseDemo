@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  bitriseDemo
 //
-//  Created by Mehmet KILINÇKAYA on 31.08.2022.
+//  Created by Mehmet KILINÇKAYA on 27.08.2022.
 //
 
 import UIKit
