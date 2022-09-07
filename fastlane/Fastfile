@@ -28,6 +28,7 @@ end
   lane :firebase do
     firebase_app_distribution(
       app: "1:219005991539:ios:e3300bcfa9774e12808806",
+      service_credentials_file: "firebaseServiceKey.json"
       testers: "nfinfu@gmail.com",
       release_notes: "Bitrise testflight release test"
     )
